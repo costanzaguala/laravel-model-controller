@@ -9,14 +9,17 @@
        About us
     </h1>
 
-    <div class="row">
+    <div class="row justify-content-center my-5">
         @foreach ($movies as $movie)
-            <div class="col-12 col-sm-3 mb-4">
+            <div class="col-12 col-sm-5 mb-4">
                 <div class="card">
-                    <div class="card-bordy">
-                        <h4>
+                    <div class="card-body">
+                        <h5>
                             {{ $movie->title }}
-                        </h4>
+                        </h5>
+                        <a href="{{route('movies.show', ['id' => $movie->id ]) }}" class="btn btn-dark">
+                            Vai al singolo movie
+                        </a>
                     </div>
                 </div>
             </div>

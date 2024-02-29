@@ -14,7 +14,7 @@
 @endphp
 
 <footer>
-    <div class="container d-flex flex-direction-column">
+    <div class="container d-flex flex-direction-column py-4">
         <nav>
             <ul class="py-4">
                 <h5>
