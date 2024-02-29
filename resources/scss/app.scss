@@ -1,15 +1,38 @@
 @import "~bootstrap/scss/bootstrap";
 
+header {
+    overflow: hidden;
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    background-color: rgb(234, 234, 234);
+    height: 10vh;
+}
+
+
 main {
-    background-color: lightcoral;
+    height: 60vh;
 }
 
-.gatto-img {
-    height: 200px;
+
+footer {
+    background-color: rgb(234, 234, 234);
+    height: 30vh;
 }
 
-.gatto-bg {
-    height: 200px;
-    background-image: url('../img/gatto.webp');
-    background-size: contain;
+nav li {
+    list-style-type: none;
+    a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+        color: grey;
+    }
+    }
 }
+
+

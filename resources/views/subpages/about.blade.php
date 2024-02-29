@@ -3,7 +3,9 @@
 @section('page-title', 'Chi siamo')
 
 @section('main-content')
-<h1>
-    About | Laravel Start 1
-</h1>
+<main class="my-4 text-center">
+    <h1>
+       About us
+    </h1>
+</main>
 @endsection

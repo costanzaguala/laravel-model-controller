@@ -11,18 +11,18 @@
             'active' => true,
         ],
         [
-            'url' => '/contatti',
-            'label' => 'Contatti',
-            'active' => false,
+            'url' => '/movies',
+            'label' => 'Movies',
+            'active' => true,
         ],
     ];
 @endphp
 
 <header>
     <nav>
-        <ul>
+        <ul class="d-flex justify-content-center py-4">
             @foreach ($links as $link)
-                <li>
+                <li class="mx-4">
                     @if ($link['active'])
                         <a href="{{ $link['url'] }}">
                             {{ $link['label'] }}
